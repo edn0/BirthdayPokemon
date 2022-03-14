@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/jpg" href="icons/android-chrome-512x512.png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/json" src="followers.json"></script>
+    <script src="main.js"></script>
+    <title>PokeAPI Results</title>
+</head>
+<body>
+
+    <div id="title">Find your Pokémon by entering your birth date below</div>
+
+
+    <div class="mainFrame">    
+        <div id="pkmn_sprite_container" >
+            <div id="pkmn_sprite"><img id="pkmn_sprite_img"></div>
+        </div>
+        
+        <div id="submit_field">
+
+            <div class="user_input">
+
+                <input type="text" id="day" value="Day"/>
+                <input type="text" id="month" value="Month"/>
+                <input type="text" id="year" value="Year"/>
+
+
+            </div>
+
+            <input type="submit" onclick="submit_pkmn()" id="submit_btn" value="Submit">
+        </div>
+
+    </div>    
+</body>
+</html>
