@@ -10,6 +10,27 @@ function submit_pkmn() {
     var month = document.getElementById("month").value;
     var year = document.getElementById("year").value;
 
+    if (day > 31) {
+        submit_btn = document.getElementById("submit_btn");
+        
+        submit_btn.style.backgroundColor = "#FF0004";
+        retun;
+    } 
+
+    if (month > 12) {
+        submit_btn = document.getElementById("submit_btn");
+
+        submit_btn.style.backgroundColor = "#FF0004";
+    }
+
+    if (year < 0 && year > 10000 ) {
+        submit_btn = document.getElementById("submit_btn");
+
+        submit_btn.style.backgroundColor = "#FF0004";
+    }
+
+
+    // Date operation
     pkmn_ID = (day * month) % year;
     console.log(pkmn_ID);
 
@@ -32,6 +53,10 @@ function submit_pkmn() {
         // There was an error
         console.warn('Something went wrong.', err);
     });
+
+    submit_btn = document.getElementById("submit_btn");
+        
+    submit_btn.style.backgroundColor = "#fff";
     
 }
 
