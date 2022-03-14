@@ -85,15 +85,16 @@ img {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    gap: 5px;
+    gap: 2px;
 }
 
 #user_input {
-    width: 50%;
-    height: 300px;
+    height: 200px;
     display: flex;
     flex-flow: row;
     text-align: center;
+    justify-content: space-evenly;
+    padding: 0 30% 0 30%;
     font-size: 20px;
     background-color: red;
 }
