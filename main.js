@@ -49,6 +49,9 @@ function submit_pkmn() {
         img.id = "pkmn_sprite_img";
         document.getElementById("pkmn_sprite_img").remove();
         document.getElementById("pkmn_sprite_container").appendChild(img);
+
+        const pkmn_name = data.pokemon["name"];
+        document.getElementById("pkmn_name").innerHTML = pkmn_name;
     }).catch(function (err) {
         // There was an error
         console.warn('Something went wrong.', err);
@@ -57,7 +60,7 @@ function submit_pkmn() {
 
 }
 
-
+// Supposed to allow for validating after pressing enter, need to figure how to implement it properly
 function clickPress(event) {
     if (event.keyCode == 13) {
         submit_pkmn();
