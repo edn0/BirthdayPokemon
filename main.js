@@ -54,10 +54,7 @@ function submit_pkmn() {
         console.warn('Something went wrong.', err);
     });
 
-    submit_btn = document.getElementById("submit_btn");
-        
-    submit_btn.style.backgroundColor = "#fff";
-    
+
 }
 
 

@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="application/json" src="followers.json"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="main.js"></script>
     <title>Birthday Pokémon</title>
 </head>
 <body>
 
-    <div id="title">Find your Pokémon by entering your birth date below</div>
+    <div id="title">Birthday Pokémon</div>
+    <div id="description">>Find your Pokémon by entering your birth date below.</div>
 
 
     <div class="mainFrame">    
@@ -20,6 +23,7 @@
             <div id="pkmn_sprite"><img id="pkmn_sprite_img"></div>
         </div>
         
+        <div id="pkmn_name"></div>
 
         <div class="user_input">
 
@@ -28,13 +32,13 @@
             <input type="text" id="year" placeholder="Year"/>
 
 
-            <button type="button" onclick="submit_pkmn()" id="submit_btn">
-                Submit
-            </button>
-    
+
             
         </div>
 
+        <button type="button" onclick="submit_pkmn()" id="submit_btn">
+            Submit
+        </button>
 
 
 

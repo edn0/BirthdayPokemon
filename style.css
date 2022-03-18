@@ -10,30 +10,57 @@ img {
 }
 
 
-/* On screens that are 992px or less, set the background color to blue */
 @media screen and (min-width: 700px) {
     #title {
-      font-size: 500%;
+      font-size: 700%;
     }
 
+    #day, 
+    #month, 
+    #year {
+        font-size: 30px;
+    }
+
+    #submit_btn, 
+    #description {
+        font-size: 16px;
+    }
   }
   
-  /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 700px) {
     #title {
-        font-size: 200%;
+        font-size: 260%;
+    }
+    #day,
+    #month, 
+    #year {
+        font-size: 16px;
+    }
+    #submit_btn, 
+    #description {
+        font-size: 12px;
     }
   }
 
 #title {
-    color: #f6bec4;
+    color: #ed979d;
 	-webkit-text-stroke: 1px #9db9e0;
     text-align: center;
-    margin: 15px;
+    margin: 15px 15px 0px 15px;
     font-family:Arial, Helvetica, sans-serif;
     background-color: #9db9e0;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.05);
 
+}
+
+#description {
+    background-color: rgba(157, 185, 224, 0.5);
+    margin: 0px 15px 15px 15px;
+    line-height: 3vh;
+    color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.05);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .mainFrame {
@@ -41,7 +68,9 @@ img {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.05);
+    background-color: #9db9e0;
+    margin: 5vw;
 }
 
 
@@ -49,7 +78,7 @@ img {
     width: 300px;
     height: 300px;
     background-color: #f6f7f9;
-    border: 15px outset #f6bec4;
+    border: 15px outset #ed979d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,10 +119,19 @@ img {
 #day, #month, #year {
     text-align: center;
     opacity: 0.8;
-    height: 20px;
-    border-radius: 3px;
-    margin: 2px;
-    border: 2px inset #f6bec4;
+    height: 4vh;
+    border-radius: 12px;
+    margin: 4px;
+    background-color: #ed979d;
+    color: #f6f7f9;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #f6f7f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#day:focus, #month:focus, #year:focus {
+    background-color: #f6bec4;
 }
 
 #day {
@@ -106,18 +144,23 @@ img {
 }
 
 #year {
-    width: 15%;
+    width: 30%;
 }
 
 #submit_btn {
-    width: 20%;
-    font-size: 14px;
+    margin: 15px;
+    width: 20vw;
     opacity: 0.8;
-    background-color: #fff;
-    border-radius: 3px;
-    border: 2px inset #f6bec4;
+    background-color: #f6f7f9;
+    border-radius: 12px;
+    height: 3vh;
+    border: 2px solid #f6f7f9;
+    background-color: #ed979d;
+    color: #f6f7f9;
+
 }
 
 #submit_btn:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
