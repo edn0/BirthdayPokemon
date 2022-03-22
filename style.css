@@ -137,7 +137,7 @@ img {
 
 #day, #month, #year {
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.9;
     height: 4vh;
     border-radius: 12px;
     margin: 4px;
@@ -176,7 +176,7 @@ img {
     border: 2px solid #f6f7f9;
     background-color: #ed979d;
     color: #f6f7f9;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 #submit_btn:hover {
