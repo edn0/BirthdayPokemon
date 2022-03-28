@@ -29,7 +29,7 @@ img {   /* pokémon sprites */
     font-size: 24px;
 }
 
-.mainFrame {
+#mainFrame {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -107,6 +107,7 @@ img {   /* pokémon sprites */
     color: #f6f7f9;
     border: 0;
     font-family: 'Roboto', sans-serif;
+    /* no border pls */
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2), 0 4px 16px 0 rgba(0,0,0,0.19);
 }
 
