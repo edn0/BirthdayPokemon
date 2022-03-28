@@ -1,16 +1,14 @@
 body {
     background-color: #b4ddf2;
-
-
 }
 
-img {
+img {   /* pokémon sprites */
     width: 256;
     height: 256;
-}
+} 
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 640px) {
     #title {
       font-size: 700%;
     }
@@ -26,12 +24,19 @@ img {
         font-size: 16px;
     }
 
+
     #pkmn_name {
         font-size: 32px;
+        
+    }
+
+    #mainFrame {
+        margin: 2px 10px;
+        width: 100%;
     }
   }
   
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 640px) {
     #title {
         font-size: 260%;
     }
@@ -48,6 +53,10 @@ img {
     #pkmn_name {
         font-size: 24px;
     }
+
+    #mainFrame {
+        margin: 2px 2px;
+    }
   }
 
 #title {
@@ -57,7 +66,7 @@ img {
     margin: 15px 15px 0px 15px;
     font-family:Arial, Helvetica, sans-serif;
     background-color: #9db9e0;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.05);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.1), 0 4px 16px 0 rgba(0,0,0,0.05);
 
 }
 
@@ -66,19 +75,19 @@ img {
     margin: 0px 15px 15px 15px;
     line-height: 3vh;
     color: #ffffff;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.05);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.1), 0 4px 16px 0 rgba(0,0,0,0.05);
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-size: 24px;
 }
 
 .mainFrame {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.05);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.1), 0 4px 16px 0 rgba(0,0,0,0.05);
     background-color: #9db9e0;
-    margin: 5vw;
 }
 
 
@@ -94,7 +103,7 @@ img {
     border-radius: 50%;
     animation: flip 1.5s ease-in-out backwards;
 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2), 0 4px 16px 0 rgba(0,0,0,0.19);
 
 }
 
@@ -117,11 +126,16 @@ img {
     text-transform: capitalize; /* because it comes uncapitalized from the api */
     display: flex;
     justify-content: center;
-    width: 70vw;
-    height: 10vh;
-    
-    color: #fff;
+    width: 40vw;
+    height: 6vh;
+    color: #f6f7f9;
     font-family: 'Roboto', sans-serif;
+    opacity: 0.9;
+    align-items: center;
+    background-color: #ed979d;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2), 0 4px 16px 0 rgba(0,0,0,0.19);
+    margin: 10px;
 
 }
 
@@ -145,8 +159,7 @@ img {
     color: #f6f7f9;
     border: 0;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid #f6f7f9;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2), 0 4px 16px 0 rgba(0,0,0,0.19);
 }
 
 #day:focus, #month:focus, #year:focus {
@@ -173,13 +186,15 @@ img {
     background-color: #f6f7f9;
     border-radius: 12px;
     height: 3vh;
-    border: 2px solid #f6f7f9;
+    border: 0;
     background-color: #ed979d;
     color: #f6f7f9;
     font-family: 'Roboto', sans-serif;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2), 0 4px 16px 0 rgba(0,0,0,0.19);
+
 }
 
 #submit_btn:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2), 0 4px 16px 0 rgba(0,0,0,0.19);
 }
 
