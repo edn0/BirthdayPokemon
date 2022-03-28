@@ -7,58 +7,6 @@ img {   /* pokémon sprites */
     height: 256;
 } 
 
-
-@media screen and (min-width: 640px) {
-    #title {
-      font-size: 700%;
-    }
-
-    #day, 
-    #month, 
-    #year {
-        font-size: 30px;
-    }
-
-    #submit_btn, 
-    #description {
-        font-size: 16px;
-    }
-
-
-    #pkmn_name {
-        font-size: 32px;
-        
-    }
-
-    #mainFrame {
-        margin: 2px 10px;
-        width: 100%;
-    }
-  }
-  
-  @media screen and (max-width: 640px) {
-    #title {
-        font-size: 260%;
-    }
-    #day,
-    #month, 
-    #year {
-        font-size: 16px;
-    }
-    #submit_btn, 
-    #description {
-        font-size: 12px;
-    }
-
-    #pkmn_name {
-        font-size: 24px;
-    }
-
-    #mainFrame {
-        margin: 2px 2px;
-    }
-  }
-
 #title {
     color: #ed979d;
 	-webkit-text-stroke: 1px #9db9e0;
@@ -198,3 +146,61 @@ img {   /* pokémon sprites */
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2), 0 4px 16px 0 rgba(0,0,0,0.19);
 }
 
+
+
+
+
+
+
+
+
+@media screen and (min-width: 640px) {
+    #title {
+      font-size: 700%;
+    }
+
+    #day, 
+    #month, 
+    #year {
+        font-size: 30px;
+    }
+
+    #submit_btn, 
+    #description {
+        font-size: 16px;
+    }
+
+
+    #pkmn_name {
+        font-size: 32px;
+        
+    }
+
+    #mainFrame {
+        margin: 2px 10px;
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    #title {
+        font-size: 260%;
+    }
+    #day,
+    #month, 
+    #year {
+        font-size: 16px;
+    }
+    #submit_btn, 
+    #description {
+        font-size: 12px;
+    }
+
+    #pkmn_name {
+        font-size: 24px;
+    }
+
+    #mainFrame {
+        margin: 2px 2px;
+    }
+  }
