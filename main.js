@@ -51,7 +51,9 @@ function submit_pkmn() {
         document.getElementById("pkmn_sprite_container").appendChild(img);
 
         const pkmn_name = data.pokemon["name"];
+        pkmn_name_element = document.getElementById("pkmn_name");
         document.getElementById("pkmn_name").innerHTML = pkmn_name;
+        pkmn_name_element.style.opacity = 0.9; // Reveal element after submit
     }).catch(function (err) {
         // There was an error
         console.warn('Something went wrong.', err);

@@ -78,7 +78,7 @@ img {   /* pokémon sprites */
     height: 6vh;
     color: #f6f7f9;
     font-family: 'Roboto', sans-serif;
-    opacity: 0.9;
+    opacity: 0;
     align-items: center;
     background-color: #ed979d;
     border-radius: 12px;
