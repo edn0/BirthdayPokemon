@@ -1,5 +1,14 @@
 let data = [];
 
+function submit_animation() {
+
+    const sprite_container = document.getElementById("pkmn_sprite_container");
+    sprite_container.setAttribute( "class", ".submit_animation");
+    setTimeout( function() {
+        sprite_container.setAttribute( "class", "")
+    }, 3000)
+
+}
 
 
 
@@ -23,7 +32,7 @@ function submit_pkmn() {
         submit_btn.style.backgroundColor = "#FF0004";
     }
 
-    if (year < 0 && year > 10000 ) {
+    if (year < 1850 && year > 2100 ) {
         submit_btn = document.getElementById("submit_btn");
 
         submit_btn.style.backgroundColor = "#FF0004";
@@ -32,7 +41,13 @@ function submit_pkmn() {
 
     // Date operation
     pkmn_ID = (day * month) % year;
+
+
+
+
+
     console.log(pkmn_ID);
+    submit_animation();
 
     url = "https://pokeapi.co/api/v2/pokemon-form/" + pkmn_ID + "/";
 
@@ -54,6 +69,7 @@ function submit_pkmn() {
         pkmn_name_element = document.getElementById("pkmn_name");
         document.getElementById("pkmn_name").innerHTML = pkmn_name;
         pkmn_name_element.style.opacity = 0.9; // Reveal element after submit
+
     }).catch(function (err) {
         // There was an error
         console.warn('Something went wrong.', err);
@@ -62,9 +78,19 @@ function submit_pkmn() {
 
 }
 
+
+
+
+
+
+
+
 // Supposed to allow for validating after pressing enter, need to figure how to implement it properly
 function clickPress(event) {
     if (event.keyCode == 13) {
         submit_pkmn();
     }
 }
+
+
+
